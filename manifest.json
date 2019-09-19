@@ -3,9 +3,13 @@
   "name": "Yodafy",
   "version": "1.0",
   "description": "Translate incomprehensible English into simple-to-understand Yoda grammar.",
-  "content-scripts":[
+  "content_scripts":[
     {
-      "js": ["./main.js"]
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["./main.js", "./grabText.js"]
     }
   ]
 }
