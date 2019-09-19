@@ -14,7 +14,7 @@ class JediPowers{
       const splitWordsArray = inputSentence.split(' ');
       for(let i = 0 ; i < splitWordsArray.length ; i +=1){
         const wordToCheck = splitWordsArray[i];
-        $.get(`https://dictionaryapi.com/api/v3/references/collegiate/json/${wordToCheck}?key=82e0af33-78ba-4492-bdbd-30f85423f7be` , 
+        $.get(`https://dictionaryapi.com/api/v3/references/collegiate/json/${wordToCheck}?key=5fc2459a-0842-4952-a6d9-78d2b8ecc1ca` , 
             function( data ) {
               const wordTypeResult = data[0].fl;
               const wordTypeResultAlt = data[1].fl

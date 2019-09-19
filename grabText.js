@@ -76,16 +76,24 @@ document.addEventListener('mousemove', function (e) {
         console.log("yoda", newYodaStr)
         newYodaStr.yodafy(srcElement.textContent)
 
+        const say = [
+          "A joke you are playing on Yoda, hrmmm?",
+          "A cookie wookie wants.",
+          "To the darkside of Javascript fear leads.",
+          "No sense you make!"
+        ]
         setTimeout(() => {
           console.log("yoda", newYodaStr.newYodaString)
           if (newYodaStr.newYodaString === null){
-            srcElement.textContent = "A joke you are playing on Yoda, hrmmm?"
+            srcElement.textContent = say[Math.floor(Math.random()*say.length)]
           }else{
             srcElement.textContent = newYodaStr.newYodaString
           }
           srcElement.style.color = "green";
+          srcElement.style.transform = "scale(0.97,0.97)"
         }, 2000);
 
+        srcElement.style.transform = "scale(1.1, 1.1)"
         console.log(srcElement.textContent);
         // srcElement.textContent = "HI"
         console.log("PREV", prevText)
