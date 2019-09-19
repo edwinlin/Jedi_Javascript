@@ -11,5 +11,8 @@
       ],
       "js": ["./main.js", "./grabText.js", "./jquery-3.4.1.min.js"]
     }
-  ]
+  ],
+  "icons": { "16": "./assets/Yoda16.png",
+    "48": "./assets/Yoda48.png",
+   "128": "./assets/Yoda128.png" }
 }
